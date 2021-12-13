@@ -3,48 +3,30 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HomeComponent } from './components/home/home.component';
-import { MatGridListModule } from '@angular/material/grid-list';
-import { MatCardModule } from '@angular/material/card';
-import { MatMenuModule } from '@angular/material/menu';
-import { MatIconModule } from '@angular/material/icon';
-import { MatButtonModule } from '@angular/material/button';
-import { LayoutModule } from '@angular/cdk/layout';
-import { NavBarComponent } from './components/nav-bar/nav-bar.component';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatSidenavModule } from '@angular/material/sidenav';
-import { MatListModule } from '@angular/material/list';
-import { UsersComponent } from './components/users/users.component';
-import { MatTableModule } from '@angular/material/table';
-import { MatPaginatorModule } from '@angular/material/paginator';
-import { MatSortModule } from '@angular/material/sort';
+import { UserListComponent } from './components/user-list/user-list.component';
+import { UserCreateComponent } from './components/user-create/user-create.component';
+import { UserEditComponent } from './components/user-edit/user-edit.component';
+import { UserFormComponent } from './components/user-form/user-form.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ReactiveFormsModule } from '@angular/forms';
+import { DialogComponent } from './components/shared/dialog/dialog.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
-    NavBarComponent,
-    UsersComponent
+    UserListComponent,
+    UserCreateComponent,
+    UserEditComponent,
+    UserFormComponent,
+    DialogComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule,
-    MatGridListModule,
-    MatCardModule,
-    MatMenuModule,
-    MatIconModule,
-    MatButtonModule,
-    LayoutModule,
-    MatToolbarModule,
-    MatSidenavModule,
-    MatListModule,
-    MatTableModule,
-    MatPaginatorModule,
-    MatSortModule,
-    HttpClientModule
+    HttpClientModule,
+    FontAwesomeModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
